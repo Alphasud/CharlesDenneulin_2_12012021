@@ -20,19 +20,19 @@ body {
 .menu a {
     text-decoration: none;
     cursor: pointer;
+    padding: 3rem 1rem;
+    border-top: transparent solid 2px;
+    transition: color .2s ease-in-out, border .2s ease-in-out;
 }
 
 .menu a:hover {
     color: #0065FC;
-}
-
-.menu a:active {
-    color: #0065FC;
+    border-top: #0065FC solid 2px;
 }
 
 .menu li {
     display: inline-flex;
-    padding: 3rem;
+    padding: 0rem 2rem;
 }
 
 .menu li:last-child {

@@ -5,6 +5,7 @@
 /* base font-size corresponds to 10px and is adapted to rem unit */
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 body {
 	background-color: #fff;
