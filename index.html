@@ -33,39 +33,46 @@
             <p class="search-field_text">En plein centre ville ou en pleine nature</p>
             <form class="search-field_search-form" action="#">
                 <i class="fas fa-map-marker-alt"></i>
-                <input class="search-field_search-form_input" type="search" name="city" placeholder="Marseille, France">
-                <button class="search-field_search-form_button" type="submit">Rechercher</button>
-            </form>
+                <input class="search-field_search-form_input" type="search" name="city" id="city" placeholder="Marseille, France">
+                <button class="search-field_search-form_button" type="submit">
+                    <i class="fas fa-search"></i>
+                    <span class="search-field_search-form_button-search">Rechercher</span>
+                </button>
             <div class="search-field_filter">
-               <p>Filtres</p>          
-                    <div>
-                        <input type="checkbox" name="economique" checked>
-                        <label for="economique">
+                    <p class="search-field_text">Filtres</p>  
+                    <div class="search-field_filter_links">
+                        <input class="search-field_filter_checkbox" type="checkbox" name="economique" checked>
+                        <label class="search-field_filter_label" for="economique">
                             <i class="fas fa-money-bill-wave"></i>
                             Economique
                         </label>
                     </div>
-                    <div>
-                        <input type="checkbox" name="familial" checked>
-                        <label for="familial">
+                    <div class="search-field_filter_links">
+                        <input class="search-field_filter_checkbox" type="checkbox" name="familial" checked>
+                        <label class="search-field_filter_label" for="familial">
                             <i class="fas fa-child"></i>
                             Familial
                         </label>
                     </div>
-                    <div>
-                        <input type="checkbox" name="romantique" checked>
-                        <label for="romantique">
+                    <div class="search-field_filter_links">
+                        <input class="search-field_filter_checkbox" type="checkbox" name="romantique" checked>
+                        <label class="search-field_filter_label" for="romantique">
                             <i class="fas fa-heart"></i>
                             Romantique
                         </label>
                     </div>
-                    <div>
-                        <input type="checkbox" name="animaux" checked>
-                        <label for="animaux">
+                    <div class="search-field_filter_links">
+                        <input class="search-field_filter_checkbox" type="checkbox" name="animaux" checked>
+                        <label class="search-field_filter_label" for="animaux">
                             <i class="fas fa-dog"></i>
                             Animaux Autorisés
                         </label>
                     </div>
+            </div>
+            </form>
+            <div class="search-field_info">
+                <i class="fas fa-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
         <section class="accommodation" id="accommodation">

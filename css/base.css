@@ -3,6 +3,13 @@
 /* ----------------------------- */
 
 /* base font-size corresponds to 10px and is adapted to rem unit */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;

@@ -61,7 +61,7 @@ i.fas.fa-map-marker-alt {
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     outline: none;
-    margin-top: .8rem;
+    margin-top: 1.5rem;
     padding: .85rem 1rem .8rem 1.2rem;
     color: black;
     font-weight: 700;
@@ -82,8 +82,78 @@ i.fas.fa-map-marker-alt {
     background-color: #0065FC;
     color: white;
     font-weight: 700;
-    padding: .95rem;
+    padding: .9rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-left: -.5rem;
+    cursor: pointer;
+}
+
+.search-field_search-form_button-search {
+    display: initial;
+}
+
+.fas.fa-search {
+    display: none;
+}
+
+.search-field_filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 2rem;
+}
+
+.search-field_text {
+    font-size: 1.4rem;
+    padding-top: .6rem;
+    margin-right: 1rem;
+    font-weight: 700;
+}
+
+.search-field_filter_links {
+    margin: 0 1.5rem;
+    border: 2px solid #F2F2F2 ;
+    border-radius: 20px;
+    padding: 0rem 1rem 0rem 0rem;
+    transition: background-color .2s ease-in-out, scale .2S ease-in-out;
+}
+
+.search-field_filter_checkbox {
+    display: none;
+}
+
+.search-field_filter_label {
+    font-weight: 700;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.search-field_filter_links:hover {
+    background-color: #F2F2F2;
+    scale: 1.1;
+}
+
+.fas.fa-money-bill-wave, 
+.fas.fa-child, 
+.fas.fa-heart, 
+.fas.fa-dog {
+    position: relative;
+    right: 2px;
+    color: #0065FC;
+    background-color:  #DEEBFF;
+    padding: .8rem;
+    border-radius: 100px;
+}
+
+.fas.fa-child {
+    padding: .8rem 1rem;
+}
+
+.search-field_info {
+    display: flex;
+}
+
+.fas.fa-info {
+    
 }
