@@ -5,6 +5,8 @@ body {
     padding: 0 3rem 3rem 3rem;
 }
 
+/*----MENU----*/
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -33,6 +35,8 @@ body {
     font-weight: 700;
     padding-right: 0;
 }
+
+/*----SEARCH-FORM----*/
 
 .search-field_title {
     font-weight: 700;
@@ -97,6 +101,8 @@ i.fas.fa-map-marker-alt {
     display: none;
 }
 
+/*----FILTER----*/
+
 .search-field_filter {
     display: flex;
     flex-wrap: wrap;
@@ -105,36 +111,42 @@ i.fas.fa-map-marker-alt {
 }
 
 .search-field_text {
-    font-size: 1.4rem;
-    padding-top: .6rem;
+    font-size: 1.2rem;
+    padding-top: .7rem;
     margin-right: 1rem;
     font-weight: 700;
 }
 
 .search-field_filter_links {
     margin: 0 1.5rem;
-    border: 2px solid #F2F2F2 ;
-    border-radius: 20px;
-    padding: 0rem 1rem 0rem 0rem;
-    transition: background-color .2s ease-in-out, scale .2S ease-in-out;
+    transition: scale .2S ease-in-out;
 }
 
 .search-field_filter_checkbox {
-    display: none;
+    position: absolute;
+    left: -9999px;
 }
 
 .search-field_filter_label {
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    border: 2px solid #F2F2F2 ;
     cursor: pointer;
+    padding: .7rem 1rem .7rem 0rem;
+    border-radius: 20px;
+    transition: background-color .2s ease-in-out;
 }
 
-.search-field_filter_links:hover {
+.search-field_filter_label:hover {
     background-color: #F2F2F2;
     scale: 1.1;
 }
 
-.fas.fa-money-bill-wave, 
+.search-field_filter_links:hover {
+    scale: 1.1;
+}
+
+.fas.fa-money-bill-wave,
 .fas.fa-child, 
 .fas.fa-heart, 
 .fas.fa-dog {
@@ -142,12 +154,16 @@ i.fas.fa-map-marker-alt {
     right: 2px;
     color: #0065FC;
     background-color:  #DEEBFF;
-    padding: .8rem;
+    padding: 1rem;
     border-radius: 100px;
 }
 
 .fas.fa-child {
-    padding: .8rem 1rem;
+    padding: 1rem 1.2rem;
+}
+
+.search-field_filter_checkbox:checked + .search-field_filter_label {
+    background-color: #F2F2F2;
 }
 
 .search-field_info {
@@ -155,5 +171,82 @@ i.fas.fa-map-marker-alt {
 }
 
 .fas.fa-info {
-    
+    color: #0065FC;
+    font-size: 1rem;
+    line-height: 18px;
+    margin-top: 1.6rem;
+    padding: 0rem .7rem 0rem .8rem;
+    border: 1px solid #F2F2F2;
+    border-radius: 100px;
+}
+
+.search-field_info_text {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+
+/*----ACCOMMODATION CARDS----*/
+
+.result-container {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+
+.accommodation {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #F2F2F2;
+
+}
+
+.accommodation_title {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem 0 0 1.5rem;
+}
+
+.accommodation_card {
+    height: 17rem;
+    margin: 1rem;
+    border-radius: 20px;
+    flex: 1 0 27%;
+    padding: .3rem;
+    background-color: #FFF;
+    box-shadow: .1rem .1rem .4rem rgba(0, 0, 0, .1);
+}
+
+.accommodation_card img {
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.accommodation_car_container {
+    height: 5rem;
+}
+
+.accommodation_car_container h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: .3rem 0 0 1rem;
+}
+
+.accommodation_car_container p {
+    margin: 0;
+    padding: .3rem 0 0 1rem;
+    font-size: 1.2rem;
+}
+
+.accommodation_car_container_rating {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: #0065FC;
 }
