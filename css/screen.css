@@ -195,14 +195,14 @@ i.fas.fa-map-marker-alt {
 }
 
 .accommodation {
-    width: 60%;
     display: flex;
+    flex: 1 0 66%;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
     border-radius: 10px;
     padding: 1rem;
     background-color: #F2F2F2;
+    margin-right: 2rem;
 
 }
 
@@ -214,39 +214,133 @@ i.fas.fa-map-marker-alt {
 }
 
 .accommodation_card {
-    height: 17rem;
+    max-width: 17rem;
+    min-width: 17rem;
+    height: 15rem;
     margin: 1rem;
-    border-radius: 20px;
+    border-radius: 15px;
     flex: 1 0 27%;
     padding: .3rem;
     background-color: #FFF;
     box-shadow: .1rem .1rem .4rem rgba(0, 0, 0, .1);
 }
 
-.accommodation_card img {
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.accomodation_card_link {
+    text-decoration: none;
 }
 
-.accommodation_car_container {
+.accomodation_card:hover {
+    box-shadow: .1rem .1rem .4rem rgba(0, 0, 0, 1);
+}
+
+.accommodation_card_picture {
+    height: auto;
+    min-width: 15rem;
+    max-width: 15rem;
+}
+
+.accommodation_card img {
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.accommodation_card_container {
     height: 5rem;
 }
 
-.accommodation_car_container h4 {
+.accommodation_card_container h4 {
     font-size: 1.2rem;
     font-weight: 700;
     padding: .3rem 0 0 1rem;
 }
 
-.accommodation_car_container p {
+.accommodation_card_container p {
     margin: 0;
     padding: .3rem 0 0 1rem;
     font-size: 1.2rem;
 }
 
-.accommodation_car_container_rating {
+.accommodation_card_container_rating {
     margin-left: 1rem;
     font-size: 1.2rem;
     color: #0065FC;
 }
+
+.accommodation-seemore {
+    width: 100%;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    padding: 1rem 0 1rem 1rem;
+    cursor: pointer;
+}
+
+/*---POPULAR ACCOMODATION---*/
+
+.popular {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 95%);
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 1rem;
+}
+
+.popular_card {
+    display: flex;
+    flex-direction: row;
+    height: 10rem;
+    margin: 1rem;
+    border-radius: 15px;
+    padding: .3rem;
+    background-color: #FFF;
+    overflow: visible;
+    box-shadow: .1rem .1rem .4rem rgba(0, 0, 0, .1);
+}
+
+.popular_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.fas.fa-chart-line {
+    margin-right: 1rem;
+}
+
+.popular_title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem 0 0 1.5rem;
+}
+
+.popular_card_picture {
+    height: auto;
+    min-width: 10rem;
+    max-width: 10rem;
+}
+
+.popular_card_picture img {
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+
+.popular_card_container {
+    padding-right: 2rem;
+}
+
+.popular_card_container h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: .3rem 0 0 1rem;
+}
+
+.popular_card_container p {
+    margin: 0;
+    padding: .3rem 0 2.5rem 1rem;
+    font-size: 1.2rem;
+}
+
