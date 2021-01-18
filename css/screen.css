@@ -359,7 +359,6 @@ i.fas.fa-map-marker-alt {
 .activity {
     margin-top: 1rem;
     padding: 2rem;
-    background-color: #F2F2F2;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -372,23 +371,43 @@ i.fas.fa-map-marker-alt {
     padding: 1rem 0 0 1.5rem;
 }
 
-.activity_card {
-    height: 20rem;
-    width: auto;
+.activity_card-simple {
+    display: flex;
+    flex-direction: column;
+    height: auto;
     margin: 1rem;
-    flex:1 0 20%;
+    flex: 1 1 20%;
     border-radius: 15px;
-    padding: .3rem;
+    padding: 0;
     background-color: #FFF;
     box-shadow: .1rem .1rem .4rem rgba(0, 0, 0, .1);
 }
 
-.activity_card_picture {
-    max-height: 15rem;
+.activity_card-double {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    flex: 1 1 20%;
+    border-radius: 15px;
+    padding: 0;
+    background-color: #FFF;
+    box-shadow: .1rem .1rem .4rem rgba(0, 0, 0, .1);
 }
 
-.activity_card_picture img {
-    height: 100%;
+.activity_card_picture-simple img {
+    max-width: 100%;
+    min-width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.activity_card_picture-double img {
+    max-width: 30rem;
+    min-width: 20rem;
+    height: 13rem;
+    object-fit: cover;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
 }
@@ -400,11 +419,12 @@ i.fas.fa-map-marker-alt {
 
 .activity_card_container {
     padding-right: 2rem;
+    height: 3rem;
 }
 
 .activity_card_container h4 {
     font-size: 1.2rem;
     font-weight: 700;
-    padding: .3rem 0 0 1rem;
+    padding: 1rem 0 0rem 1rem;
 }
 
