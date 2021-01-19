@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr">  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/57ba338bef.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <title>Reservia</title>
     <link rel="stylesheet" type="text/css" media="all" href="css/base.css" />
     <link
@@ -17,6 +17,7 @@
     />
   </head>
   <body>
+<!--HEADER--> 
     <header class="header">
       <img class="logo" src="images/Reservia.svg" alt="logo" />
       <nav class="menu">
@@ -33,6 +34,7 @@
         </ul>
       </nav>
     </header>
+<!--FILTRES-->
     <main>
       <section class="search-field">
         <h1 class="search-field_title">
@@ -114,6 +116,7 @@
             Plus de 500 logements sont disponibles dans cette ville
           </p>
         </div>
+<!--HEBERGEMENT-->
       </section>
       <div class="result-container">
         <section class="accommodation" id="accommodation">
@@ -272,7 +275,7 @@
           </article>
           <button class="accommodation-seemore">Afficher plus</button>
         </section>
-
+<!--POPULAIRE-->
         <section class="popular">
           <div class="popular_header">
             <h3 class="popular_title">Les plus populaires</h3>
@@ -346,7 +349,7 @@
           </article>
         </section>
       </div>
-
+<!--ACITIVITE-->
       <section class="activity" id="activities">
         <h3 class="activity_title">Activités à Marseille</h3>
 
@@ -365,9 +368,10 @@
           </div>
         </article>
 
-        <div class="activity_double_container">
-          <article class="activity_card">
-            <picture class="activity_card_picture-double">
+        <div class="activity_double-card">
+
+          <article class="activity_card-d">
+            <picture class="activity_card_picture">
               <source
                 media="(min-width:1024px)"
                 srcset="
@@ -383,8 +387,9 @@
               <h4>Fort de Pomègues</h4>
             </div>
           </article>
-          <article class="activity_card">
-            <picture class="activity_card_picture-double">
+
+          <article class="activity_card-d">
+            <picture class="activity_card_picture">
               <source
                 media="(min-width:1024px)"
                 srcset="
@@ -401,6 +406,7 @@
             </div>
           </article>
         </div>
+
         <article class="activity_card">
           <picture class="activity_card_picture-simple">
             <source
@@ -418,9 +424,10 @@
             <h4>Parc National des Calanques</h4>
           </div>
         </article>
-        <div class="activity_double_container">
-          <article class="activity_card">
-            <picture class="activity_card_picture-double">
+
+        <div class="activity_double-card">
+          <article class="activity_card-d">
+            <picture class="activity_card_picture">
               <source
                 media="(min-width:1024px)"
                 srcset="
@@ -436,8 +443,8 @@
               <h4>Notre-Dame-de-la-Garde</h4>
             </div>
           </article>
-          <article class="activity_card">
-            <picture class="activity_card_picture-double">
+          <article class="activity_card-d">
+            <picture class="activity_card_picture">
               <source
                 media="(min-width:1024px)"
                 srcset="
@@ -456,22 +463,25 @@
         </div>
       </section>
     </main>
+
+<!--FOOTER-->
+
     <footer class="footer">
         <div class="footer_item">
             <h4>A propos</h4>
-            <p>Fonctionnement du site</p>
-            <p>Conditions générales de vente</p>
-            <p>Données et confidentialité</p>
+            <a href=""><p>Fonctionnement du site</p></a>
+            <a href=""><p>Conditions générales de vente</p></a>
+            <a href=""><p>Données et confidentialité</p></a>
         </div>
         <div class="footer_item">
             <h4>Nos hébergements</h4>
-            <p>Charte qualité</p>
-            <p>Soumettre votre hôtel</p>
+            <a href=""><p>Charte qualité</p></a>
+            <a href=""><p>Soumettre votre hôtel</p></a>
         </div>
         <div class="footer_item">
             <h4>Assistance</h4>
-            <p>Centre d'aide</p>
-            <p>Nous contacter</p>
+            <a href=""><p>Centre d'aide</p></a>
+            <a href=""><p>Nous contacter</p></a>
         </div>
     </footer>
   </body>
