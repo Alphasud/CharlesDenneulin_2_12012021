@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-     /*padding: 0 3rem;*/
 }
 
 /*----MENU----*/
@@ -16,6 +15,7 @@ body {
 
 .menu a {
     text-decoration: none;
+    outline: none;
     cursor: pointer;
     padding: 3rem 1rem;
     border-top: transparent solid 2px;
@@ -126,7 +126,7 @@ i.fas.fa-map-marker-alt {
 
 .search-field_filter_links {
     margin: 0 1.5rem;
-    transition: .2s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 .search-field_filter_checkbox {
@@ -141,7 +141,7 @@ i.fas.fa-map-marker-alt {
     cursor: pointer;
     padding: .7rem 1rem .7rem 0rem;
     border-radius: 20px;
-    transition: .2s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 .search-field_filter_label:hover {
@@ -374,7 +374,6 @@ i.fas.fa-map-marker-alt {
     height: 36rem;
     margin: 1rem 2rem 0rem 2rem;
     padding: 0;
-    overflow: hidden;
 }
 
 .activity_title {
