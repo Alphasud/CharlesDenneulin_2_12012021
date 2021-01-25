@@ -1,5 +1,5 @@
 /* ----------------------------- */
-/* -----RESET----- */
+/* ------RESET------ */
 /* ----------------------------- */
 
 /* base font-size corresponds to 10px and is adapted to rem unit */
@@ -32,9 +32,9 @@ label {
 	margin: 0;
 	padding: 0;
 }
-
 ul,
 ol {
+	
 	list-style-type: none;
 }
 

@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 3rem;
+    background-color: #FFF;
     overflow: hidden;
 }
 
@@ -24,7 +25,7 @@ body {
 
 .menu a:hover {
     color: #0065FC;
-    border-top: #0065FC solid 2px;
+    border-top: 2px solid #0065FC;
 }
 
 .menu li {
@@ -42,6 +43,7 @@ body {
 /*----SEARCH-FORM----*/
 
 .search-field {
+    background-color: #FFF;
      padding: 0 3rem;
 }
 
@@ -115,6 +117,7 @@ i.fas.fa-map-marker-alt {
     flex-wrap: wrap;
     justify-content: start;
     margin-top: 2rem;
+    background-color: #FFF;
 }
 
 .search-field_text {
@@ -175,6 +178,7 @@ i.fas.fa-map-marker-alt {
 
 .search-field_info {
     display: flex;
+    align-items: baseline;
 }
 
 .fas.fa-info {
@@ -198,8 +202,8 @@ i.fas.fa-map-marker-alt {
 .result-container {
     display:flex;
     justify-content: space-between;
-    margin-top: 2.5rem;
-    padding: 0 3rem;
+    background-color: #FFF;
+    padding: 3rem 3rem;
 }
 
 .accommodation {
@@ -288,7 +292,7 @@ i.fas.fa-map-marker-alt {
     flex-direction: column;
     justify-content: space-around;
     background-color: #f2f2f2;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 1rem 1rem 2rem 2rem;
     border-radius: 1rem;
 }
 
@@ -367,20 +371,21 @@ i.fas.fa-map-marker-alt {
 /*---ACTIVITIES---*/
 
 .activity {
+    background-color: #FFF;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
-    height: 36rem;
-    margin: 1rem 2rem 0rem 2rem;
-    padding: 0;
+    height: auto;
+    padding: 1rem 2rem 3rem 2rem;
 }
 
 .activity_title {
+    background-color: #FFF;
     width: 100%;
     font-size: 1.4rem;
     font-weight: 700;
-    padding: 3rem 0 0 3rem;
+    padding: 0 0 0 3rem;
 }
 
 .activity_card {
@@ -515,7 +520,6 @@ i.fas.fa-map-marker-alt {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 2.5rem;
     padding: 2.5rem 4rem 2rem 4rem;
     background-color: #F2F2F2;
 }
@@ -625,5 +629,12 @@ i.fas.fa-map-marker-alt {
 
     .footer{flex-direction: column;}
     .footer_item:not(:last-child){margin-bottom: 2rem;}
+}
 
+/* When the browser is at 1110px and more */
+@media screen and (min-width: 1090px) {
+    .wrapper {max-width: 110rem; margin: 0 auto; background-color: #FFF;}
+    .wrapper-footer {width: 100%; background-color: #F2F2F2;}
+    .footer {max-width: 110rem; margin: 0 auto;}
+    
 }
