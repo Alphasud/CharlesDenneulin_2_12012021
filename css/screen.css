@@ -74,7 +74,7 @@ body {
 i.fas.fa-map-marker-alt {
     font-size: 1.2rem;
     padding: 1rem;
-    background-color: var(--white);
+    background-color: var(--tertiary-color);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -93,7 +93,7 @@ i.fas.fa-map-marker-alt {
 }
 
 .search-field_search-form_input::placeholder {
-    color: black;
+    color: var(--text-color);
     font-weight: 700;
     opacity: 1;
 }
@@ -103,7 +103,7 @@ i.fas.fa-map-marker-alt {
     border: none;
     outline: none;
     background-color: var(--main-color);
-    color: white;
+    color: var(--white);
     font-weight: 700;
     padding: .9rem;
     border-top-right-radius: 10px;
@@ -558,8 +558,11 @@ i.fas.fa-map-marker-alt {
 
 /*---RESPONSIVE---*/
 
-/* When the browser is at 1067px and less */
-@media screen and (max-width: 1067px) {
+/* When the browser is at 1100px and more */
+@media screen and (min-width: 1100px) {
+    .wrapper {max-width: 110rem; margin: 0 auto; background-color: var(--white);}
+    .wrapper-footer {width: 100%; background-color: var(--tertiary-color);}
+    .footer {max-width: 110rem; margin: 0 auto;}
     
 }
 
@@ -646,10 +649,19 @@ i.fas.fa-map-marker-alt {
     .footer_item:not(:last-child){margin-bottom: 2rem;}
 }
 
-/* When the browser is at 1100px and more */
-@media screen and (min-width: 1100px) {
-    .wrapper {max-width: 110rem; margin: 0 auto; background-color: var(--white);}
-    .wrapper-footer {width: 100%; background-color: var(--tertiary-color);}
-    .footer {max-width: 110rem; margin: 0 auto;}
-    
+/* When the browser is at 383px and less */
+@media screen and (max-width: 383px) {
+    .popular_card:nth-child(3) .popular_card_container_rating {padding-top: .4rem;}
+}
+
+/* When the browser is at 316px and less */
+@media screen and (max-width: 316px) {
+    .popular_card:nth-child(4) .popular_card_container_rating {padding-top: .5rem;}
+    .popular_card:nth-child(2) .popular_card_container_rating {padding-top: 2rem;}
+}
+
+/* When the browser is at 312px and less */
+@media screen and (max-width: 312px) {
+    .popular_card:nth-child(2) .popular_card_container_rating {padding-top: .5rem;}
+    .search-field_search-form_input {width: 70%;}
 }
