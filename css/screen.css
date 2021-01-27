@@ -574,7 +574,7 @@ i.fas.fa-map-marker-alt {
     .fas.fa-search {display: initial;}
     .result-container {flex-direction: column;padding: 2rem 1rem;margin-left: 1rem;}
     .accommodation {margin: 1rem 0 0 0 ;order: 2;}
-    .popular {order: 1;margin: 0;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;width: 75%;}
+    .popular {order: 1; margin: 0; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; width: 100%;}
     .popular_card { width: 100%;}
     .popular_card_container_rating {padding-top: 2rem;}
     .popular_header{width: 100%;}
