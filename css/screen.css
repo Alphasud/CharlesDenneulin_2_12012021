@@ -14,6 +14,9 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/*The "gray" class is used to change the rating stars color*/
+.gray {color:var(--tertiary-color)}
+
 /*----MENU----*/
 
 .header {
